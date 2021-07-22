@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">StickyNotesWidget</string>
+    <string name="app_name">Sticky Notes</string>
+    <string name="enter_your_note_here">Enter your note here</string>
 </resources>
