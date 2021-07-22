@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
     override fun onStop() {
         note.setSticky(editText.text.toString())
         updateWidget()
-        Toast.makeText(this, "Note has been updated", Toast.LENGTH_SHORT).show()
 
         super.onStop()
     }
