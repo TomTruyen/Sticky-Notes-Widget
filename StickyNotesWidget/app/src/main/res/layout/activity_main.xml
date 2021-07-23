@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:background="@color/yellow"
         android:gravity="start|top"
-        android:inputType="textImeMultiLine"
+        android:inputType="textMultiLine"
         android:autofillHints="" />
 
 

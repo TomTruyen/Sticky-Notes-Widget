@@ -17,7 +17,7 @@ class AppWidget : AppWidgetProvider() {
         val pendingIntent = PendingIntent.getActivity(context, 0, launchIntent, 0)
 
         val remoteViews = RemoteViews(context?.packageName, R.layout.widget_layout)
-        remoteViews.setOnClickPendingIntent(R.id.widgetLayout, pendingIntent)
+        remoteViews.setOnClickPendingIntent(R.id.widgetTextContainer, pendingIntent)
 
         appWidgetManager?.updateAppWidget(appWidgetIds, remoteViews)
     }

@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.RemoteViews
-import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.tomtruyen.stickynoteswidget.models.StickyNote
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         note = StickyNote(this)
         val text = note.getSticky()
-        if(text != "") {
+        if(text != null && text != "") {
             editText.setText(text)
         }
     }
