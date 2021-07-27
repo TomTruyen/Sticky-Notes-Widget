@@ -8,16 +8,6 @@
     android:padding="8dp"
 
     >
-
-    <LinearLayout
-        android:id="@+id/widgetTextContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:isScrollContainer="true"
-        android:overScrollMode="always"
-        android:orientation="vertical">
-
         <TextView
             android:id="@+id/widgetText"
             android:layout_width="wrap_content"
@@ -27,8 +17,5 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             />
-
-    </LinearLayout>
-
 
 </FrameLayout>
