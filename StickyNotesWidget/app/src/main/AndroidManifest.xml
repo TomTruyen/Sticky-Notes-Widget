@@ -10,7 +10,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.StickyNotesWidget">
-        <activity android:name=".MainActivity" android:launchMode="singleTop">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8796150055601896~9979819846"/>
+
+        <activity android:name=".MainActivity" android:launchMode="singleTop"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +24,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".AppWidget" android:label="Sticky Notes">
+        <receiver android:name=".AppWidget" android:label="Sticky Notes"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
